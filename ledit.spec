@@ -5,10 +5,6 @@ Version:	1.10
 Release:	1
 License:	GPL
 Group:		Base
-Group(de):	Gründsätzlich
-Group(es):	Base
-Group(pl):	Podstawowe
-Group(pt_BR):	Base
 Source0:	ftp://ftp.inria.fr/INRIA/Projects/cristal/Daniel.de_Rauglaudre/Tools/%{name}.tar.gz
 URL:		http://www.inria.fr/~ddr
 BuildRequires:	ncurses-devel
