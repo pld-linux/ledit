@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Base
 Source0:	ftp://ftp.inria.fr/INRIA/Projects/cristal/Daniel.de_Rauglaudre/Tools/%{name}.tar.gz
+Patch0:		%{name}-warn_seq.patch
 URL:		http://www.inria.fr/~ddr
 BuildRequires:	ncurses-devel
 BuildRequires:	camlp4
@@ -29,6 +30,7 @@ spe³niaj±cej jaki¶ wzór, wybranie poprzednije linii, itd.
 
 %prep
 %setup  -q
+%patch0 -p1
 
 %build
 %{__make}
