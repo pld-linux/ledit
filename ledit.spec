@@ -8,7 +8,7 @@ Group:		Base
 #Source0-md5:	355032034ea87c579223dc6f160c8161
 Source0:	ftp://ftp.inria.fr/INRIA/Projects/cristal/Daniel.de_Rauglaudre/Tools/%{name}.tar.gz
 Patch0:		%{name}-warn_seq.patch
-URL:		http://www.inria.fr/~ddr
+URL:		http://www.inria.fr/~ddr/
 BuildRequires:	ncurses-devel
 BuildRequires:	ocaml
 BuildRequires:	ocaml-camlp4
