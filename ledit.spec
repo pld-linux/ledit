@@ -9,7 +9,7 @@ Source0:	ftp://ftp.inria.fr/INRIA/Projects/cristal/Daniel.de_Rauglaudre/Tools/%{
 URL:		http://www.inria.fr/~ddr
 BuildRequires:	ncurses-devel
 BuildRequires:	camlp4
-BuildRequires:	ocaml	
+BuildRequires:	ocaml
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		no_install_post_strip	1
