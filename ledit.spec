@@ -9,8 +9,8 @@ Source0:	ftp://ftp.inria.fr/INRIA/Projects/cristal/Daniel.de_Rauglaudre/Tools/%{
 Patch0:		%{name}-warn_seq.patch
 URL:		http://www.inria.fr/~ddr
 BuildRequires:	ncurses-devel
-BuildRequires:	camlp4
 BuildRequires:	ocaml
+BuildRequires:	ocaml-camlp4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		no_install_post_strip	1
