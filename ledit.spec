@@ -44,13 +44,11 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 install ledit.out $RPM_BUILD_ROOT%{_bindir}/ledit
 install ledit.l $RPM_BUILD_ROOT%{_mandir}/man1/ledit.1
 
-gzip -9nf README Changes
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README Changes
 %{_mandir}/man1/*
 %attr(755, root, root) %{_bindir}/*
