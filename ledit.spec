@@ -24,13 +24,13 @@ middle of the line, go to the beginning or the end of the line, get a
 previous line, search for a line with a pattern, etc.
 
 %description -l pl
-Program ledit pozwala edytowaæ linie tekstu wprowadzane w innym
+Program ledit pozwala modyfikowaæ linie tekstu wprowadzane w innym
 interaktywnym programie. Pozwala na wprowadzanie znaków w ¶rodku
 linii, przej¶cie na jej pocz±tek lub koniec, wyszukiwanie linii
 spe³niaj±cej jaki¶ wzór, wybranie poprzedniej linii, itd.
 
 %prep
-%setup  -q
+%setup -q
 %patch0 -p1
 
 %build
@@ -51,5 +51,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README Changes
+%attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
-%attr(755, root, root) %{_bindir}/*
