@@ -27,7 +27,7 @@ previous line, search for a line with a pattern, etc.
 Program ledit pozwala edytowaæ linie tekstu wprowadzane w innym
 interaktywnym programie. Pozwala na wprowadzanie znaków w ¶rodku
 linii, przej¶cie na jej pocz±tek lub koniec, wyszukiwanie linii
-spe³niaj±cej jaki¶ wzór, wybranie poprzednije linii, itd.
+spe³niaj±cej jaki¶ wzór, wybranie poprzedniej linii, itd.
 
 %prep
 %setup  -q
