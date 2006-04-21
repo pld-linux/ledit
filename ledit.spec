@@ -1,13 +1,13 @@
 Summary:	Line editor
 Summary(pl):	Edytor liniowy
 Name:		ledit
-Version:	1.10
+Version:	1.11
 Release:	1
 License:	GPL
 Group:		Base
-#Source0-md5:	355032034ea87c579223dc6f160c8161
-Source0:	ftp://ftp.inria.fr/INRIA/Projects/cristal/Daniel.de_Rauglaudre/Tools/%{name}.tar.gz
-Patch0:		%{name}-warn_seq.patch
+Source0:	http://caml.inria.fr/distrib/bazar-ocaml/%{name}.tar.gz
+# Source0-md5:	a2d38ba641682509c1e964ad699a9dd2
+Patch0:		%{name}-ocaml3.09.patch
 URL:		http://www.inria.fr/~ddr/
 BuildRequires:	ncurses-devel
 BuildRequires:	ocaml
