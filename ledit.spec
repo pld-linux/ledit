@@ -1,5 +1,5 @@
 Summary:	Line editor
-Summary(pl):	Edytor liniowy
+Summary(pl.UTF-8):   Edytor liniowy
 Name:		ledit
 Version:	1.11
 Release:	1
@@ -23,11 +23,11 @@ meta are interpreted: it is possible to insert characters in the
 middle of the line, go to the beginning or the end of the line, get a
 previous line, search for a line with a pattern, etc.
 
-%description -l pl
-Program ledit pozwala modyfikowaæ linie tekstu wprowadzane w innym
-interaktywnym programie. Pozwala na wprowadzanie znaków w ¶rodku
-linii, przej¶cie na jej pocz±tek lub koniec, wyszukiwanie linii
-spe³niaj±cej jaki¶ wzór, wybranie poprzedniej linii, itd.
+%description -l pl.UTF-8
+Program ledit pozwala modyfikowaÄ‡ linie tekstu wprowadzane w innym
+interaktywnym programie. Pozwala na wprowadzanie znakÃ³w w Å›rodku
+linii, przejÅ›cie na jej poczÄ…tek lub koniec, wyszukiwanie linii
+speÅ‚niajÄ…cej jakiÅ› wzÃ³r, wybranie poprzedniej linii, itd.
 
 %prep
 %setup -q
