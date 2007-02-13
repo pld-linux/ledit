@@ -1,5 +1,5 @@
 Summary:	Line editor
-Summary(pl.UTF-8):   Edytor liniowy
+Summary(pl.UTF-8):	Edytor liniowy
 Name:		ledit
 Version:	1.11
 Release:	1
