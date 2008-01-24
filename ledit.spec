@@ -14,8 +14,6 @@ BuildRequires:	ocaml
 BuildRequires:	ocaml-camlp4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		no_install_post_strip	1
-
 %description
 Program ledit allows to edit lines one by one when running an
 interactive command. When typing a line, some keys with control or
