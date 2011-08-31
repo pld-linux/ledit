@@ -2,7 +2,7 @@ Summary:	Line editor
 Summary(pl.UTF-8):	Edytor liniowy
 Name:		ledit
 Version:	1.11
-Release:	1
+Release:	2
 License:	GPL
 Group:		Base
 Source0:	http://caml.inria.fr/distrib/bazar-ocaml/%{name}.tar.gz
