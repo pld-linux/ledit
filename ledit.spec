@@ -1,17 +1,16 @@
 Summary:	Line editor
 Summary(pl.UTF-8):	Edytor liniowy
 Name:		ledit
-Version:	1.11
-Release:	3
-License:	GPL
+Version:	2.02.1
+Release:	1
+License:	BSD
 Group:		Base
-Source0:	http://caml.inria.fr/distrib/bazar-ocaml/%{name}.tar.gz
-# Source0-md5:	a2d38ba641682509c1e964ad699a9dd2
-Patch0:		%{name}-ocaml3.09.patch
-URL:		http://www.inria.fr/~ddr/
+Source0:	http://cristal.inria.fr/~ddr/ledit/distrib/src/%{name}-%{version}.tgz
+# Source0-md5:	f8d51a92bfe78d6e5bd5a94a131c96f8
+URL:		http://cristal.inria.fr/~ddr/ledit/
 BuildRequires:	ncurses-devel
 BuildRequires:	ocaml
-BuildRequires:	ocaml-camlp4
+BuildRequires:	camlp5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -29,25 +28,26 @@ spełniającej jakiś wzór, wybranie poprzedniej linii, itd.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
-%{__make}
+%{__make} -j1
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make}
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,/etc/skel}
 
 install ledit.out $RPM_BUILD_ROOT%{_bindir}/ledit
-install ledit.l $RPM_BUILD_ROOT%{_mandir}/man1/ledit.1
+install -p ledit.1 $RPM_BUILD_ROOT%{_mandir}/man1/ledit.1
+install -p leditrc $RPM_BUILD_ROOT/etc/skel/.leditrc
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README Changes
+%doc README CHANGES
+/etc/skel/.leditrc
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
