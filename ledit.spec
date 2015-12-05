@@ -2,7 +2,7 @@ Summary:	Line editor
 Summary(pl.UTF-8):	Edytor liniowy
 Name:		ledit
 Version:	2.02.1
-Release:	1
+Release:	2
 License:	BSD
 Group:		Base
 Source0:	http://cristal.inria.fr/~ddr/ledit/distrib/src/%{name}-%{version}.tgz
